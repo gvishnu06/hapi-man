@@ -83,6 +83,9 @@ exports.login = {
 					return reply(boom.forbidden("Incorrect Username/Password Combinition"));
 				}
 			}
+			else{
+				return reply(boom.forbidden("Incorrect Username/Password Combinition"));
+			}
 		});
 			
 		
