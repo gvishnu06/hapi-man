@@ -10,8 +10,10 @@
   "license": "ISC",
   "dependencies": {
     "boom": "^2.7.0",
+    "code": "^1.4.0",
     "hapi": "^8.4.0",
     "hapi-auth-bearer-token": "^3.1.1",
+    "lab": "^5.5.1",
     "mongoose": "^4.0.1",
     "node-uuid": "^1.4.3",
     "password-hash": "^1.2.2",
