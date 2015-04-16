@@ -6,7 +6,7 @@ var boom = require('boom');
 // Create a server with a host and port
 var server = new Hapi.Server();
 server.connection({ 
-    host: 'localhost', 
+    host: 'https://mysterious-ocean-9932.herokuapp.com', 
     port: process.env.PORT
 });
 
