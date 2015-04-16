@@ -7,7 +7,7 @@ var boom = require('boom');
 var server = new Hapi.Server();
 server.connection({ 
     host: 'localhost', 
-    port: process.env.PORT
+    port: parseInt(process.env.PORT, 10) || 3000
 });
 
 
