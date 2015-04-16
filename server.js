@@ -40,4 +40,6 @@ server.register(require('hapi-auth-bearer-token'), function (err) {
 
 server.route(routes);
 // Start the server
-server.start();
+server.start(function(){
+	console.log('Server started at: ' + server.info.uri);
+});
