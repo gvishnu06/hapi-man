@@ -34,7 +34,8 @@ exports.signup = {
 				}
 			}
 			else{
-				reply().created();
+				console.log("success!!!!!!!!!!!!!!!!!");
+				reply();
 			}
 		});
     }
