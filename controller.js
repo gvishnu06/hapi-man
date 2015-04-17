@@ -76,7 +76,7 @@ exports.login = {
 							return reply(boom.forbidden(err));
 						}
 						if(doc){
-							reply({"token" : id, "time" : time});
+							reply({"token" : id});
 						}
 					});
 				}
