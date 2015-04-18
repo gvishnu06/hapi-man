@@ -1,16 +1,20 @@
 {
   "name": "package",
   "version": "1.0.0",
-  "description": "",
+  "description": "sample rest apis using hapi",
   "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/gvishnu06/hapi-man.git"
   },
-  "author": "",
+  "scripts": {
+    "test": "lab -t 100",
+    "start": "node server.js"
+  },
+  "author": "Vishnu Gondlekar",
   "license": "ISC",
   "dependencies": {
     "boom": "^2.7.0",
-    "code": "^1.4.0",
     "hapi": "^8.4.0",
     "hapi-auth-bearer-token": "^3.1.1",
     "lab": "^5.5.1",
@@ -18,5 +22,10 @@
     "node-uuid": "^1.4.3",
     "password-hash": "^1.2.2",
     "winston": "^1.0.0"
+  },
+  "devDependencies": {
+    "code": "^1.4.0",
+    "codeclimate-test-reporter": "0.0.4",
+    "lab": "^5.5.1"
   }
 }

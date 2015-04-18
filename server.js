@@ -43,3 +43,4 @@ server.route(routes);
 server.start(function(){
 	console.log('Server started at: ' + server.info.uri);
 });
+module.exports = server;

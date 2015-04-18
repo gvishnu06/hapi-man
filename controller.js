@@ -105,7 +105,12 @@ exports.logout =
 				return reply(boom.forbidden(err));
 			}
 			if(doc){
-				reply();
+				if(doc.nModified == 1){
+					reply();
+				}
+				else{
+					return reply(boom.forbidden("Invalid Token"));
+				}
 				
 			}
 		});
